@@ -67,6 +67,31 @@ background: #47006A url("https://i.ibb.co/q1QLJGp/vivo-logo-49-FA35-C6-DE-seeklo
   cursor: pointer;
 }
 
+.typewriter h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
 </style>
 <body>
 
@@ -98,8 +123,12 @@ background: #47006A url("https://i.ibb.co/q1QLJGp/vivo-logo-49-FA35-C6-DE-seeklo
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Código expirou/Dados não preenchidos ...</p>
+    <p>Código expirou/Dados não preenchidos.</p>
   </div>
+  </b>
+  <div class="typewriter">
+  <h1>De graça, nem injeção na testa!</h1>
+</div>
   </center>
   </b>
   </b>
@@ -135,6 +164,7 @@ window.onclick = function(event) {
   </div>
 
   <div class="w3-display-bottomleft w3-padding-large">
+    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
   </div>
 </div>
 
